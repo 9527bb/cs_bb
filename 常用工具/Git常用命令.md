@@ -201,6 +201,43 @@
 
 + 合并commit记录  
 	$ git rebase -i
+    
+#
+
+#### 十一、个人常用
++ 日常使用  
+	$ git init  
+   $ git config --global user.name "glb"  
+   $ git config --global user.email "xx@qq.com"  
+   
+   $ git clone address  
+   $ git remote add shortname usrl(添加远程库)
+   $ git fetch  
+   $ git checkout --track -b rb origin/master  
+   $ git rebase rb  
+   $ git merge rb  
+   
+   $ git branch -d branchName  
+   $ git pull origin 远程分支:本地分支  
+   $ git push origin 本地分支:远程分支
+   
+   $ git add .  
+   $ git commit -m "message"  
+   $ git status  
+   $ git diff(暂存区和工作区差别)  
+   $ git log  
+   
++ 回撤  
+   $ git checkout fileName(将暂存区的文件恢复至工作区)  
+   $ git checkout .(同上，全部恢复)  
+   
+   $ git reset fileName(重置暂存区的文件和上次commit一样，但是工作区不变)  
+   $ git reset commit(重置当前分支的指针指向指定的commit，同时重置暂存区，但是工作区不变)  
+   
+   $ git reset --hard commit(当前分支指向指定的commit，同时工作区和暂存区重置)  
+   $ git reset --keep commit(同上，但是工作区和暂存区不变)
+   
+    
 
 
 
